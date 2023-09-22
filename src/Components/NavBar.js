@@ -10,10 +10,13 @@ export default function NavBar() {
   const [ids,setIds]=useState(null);
   const {addNewAlbum}=useValue();
 
+  //============================Form visibility setUp=======================================
   const toggleFormVisibility = () => {
     setIsFormVisible(!isFormVisible);
   };
 
+
+  //============================addNewAlbum    (function calling)===========================
   const handleSubmits=(e)=>{
     e.preventDefault();
     addNewAlbum(titlee,userIds,ids);

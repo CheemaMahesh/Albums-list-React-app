@@ -10,11 +10,16 @@ export default function Albums() {
   const [editingAlbumId, setEditingAlbumId] = useState(null);
   const [isFormVisible, setIsFormVisible] = useState(false);
 
+
+
+//===================================Form visibility setup====================
   const handleUpdateClick = (albumId) => {
     setEditingAlbumId(albumId);
     setIsFormVisible(true);
   };
 
+
+  //=======================updateAlbum      (function calling)====================
   const handleSubmit = (e, albumId) => {
     e.preventDefault();
     updateAlbum(titlee, userIds, albumId);
