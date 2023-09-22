@@ -1,0 +1,100 @@
+.empty{
+  height: 15vh;
+width: 98.9vw;
+}
+.albumContainer {
+    height: 100vh;
+    width: 98.9vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  .album {
+    width: 30%;
+    height: 30%;
+    background-color: #0d6477;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+   
+  }
+  
+  .album h2 {
+    margin: 0;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .titles{
+    height:50%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    /* text-align: center; */
+  }
+  .title{
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  .ids{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    width: 100%;
+    color: rgb(15, 24, 24);
+  }
+  .btns{
+    height:50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .btns button{
+    height:5vh;
+    width: 6vw;
+    border-radius: 5px;
+
+  }
+  .update{
+    background-color: rgb(33, 235, 33);
+    font-size: 1.2rem;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  .update:hover{
+    background-color: rgb(39, 249, 7);
+  }
+  .delete{
+    background-color: rgb(238, 12, 12);
+    font-size: 1.2rem;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  .delete:hover{
+    background-color: red;
+  }
+  .h5s{
+    font-size: 0.7rem;
+    color: coral;
+  }
+
+  .formPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+    /* Additional styles for the popup form */
+  }
+
+  
