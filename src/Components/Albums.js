@@ -64,6 +64,7 @@ export default function Albums() {
                     placeholder="Name"
                     onChange={(e) => setTitlee(e.target.value)}
                     value={titlee}
+                    required
                   />
                   <input
                     className={styles.AlbumId}
@@ -71,6 +72,7 @@ export default function Albums() {
                     type="number"
                     onChange={(e) => setUserIds(e.target.value)}
                     value={userIds}
+                    required
                   />
                   <input
                     className={styles.AlbumId}
