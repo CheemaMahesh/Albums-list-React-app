@@ -37,7 +37,7 @@ export default function NavBar() {
      <h1 className={styles.h1s}>AddAlbum</h1>
      <form onSubmit={handleSubmits}>
        <input className={styles.titleInp} placeholder="Name" onChange={(e)=>setTitlee(e.target.value)} value={titlee} required/>
-       <input className={styles.AlbumId} placeholder="AlbumId" type="number" onChange={(e)=>setUserIds(e.target.value)} value={userIds} required/>
+       <input className={styles.AlbumId} placeholder="User Id" type="number" onChange={(e)=>setUserIds(e.target.value)} value={userIds} required/>
        <input className={styles.AlbumId} placeholder="Id" type="number" onChange={(e)=>setIds(e.target.value)} value={ids} required/>
        <button className={styles.submit}>Submit</button>
      </form>

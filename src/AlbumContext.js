@@ -29,6 +29,7 @@ const AlbumsContext=({children})=>{
       //==========================Remove an Album============================
       function removeAlbum(id) {
         setAlbums(prevAlbums => prevAlbums.filter(album => album.id !== id));
+        alert("Album Removed from the List");
       }
 
 //==================  Add a new Album
@@ -39,6 +40,7 @@ const AlbumsContext=({children})=>{
           id,
           title,
         }]);
+        alert("New Album Added to the list")
       }
 //===================================Updating the albums
       function updateAlbum(title, userId, id) {
@@ -46,6 +48,7 @@ const AlbumsContext=({children})=>{
           return prevAlbums.map(album => {
             if (album.id === id) {
               // Update title and userId if the id matches
+              alert("UPDATED SUCCESSFULLY")
               return { ...album, title, userId };
             }
             return album;
